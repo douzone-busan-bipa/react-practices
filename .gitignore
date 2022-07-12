@@ -1,0 +1,16 @@
+##Mac
+**/.DS_Store
+
+##Maven
+**/target
+**/build
+**/out
+
+## STS/Eclipse IDE
+**/.settings
+**/.classpath
+**/.project
+
+## Node(JavaScript) Project
+**/node_modules
+	
