@@ -5,8 +5,8 @@ ex08: JSX Tutorials
 04. Pure React(React API)로 컴포넌트 만들기
 05. 클래스 컴포넌트 만들기
 06. 특징3: JSX 표현식 표기법({js expression})
-
-08
+07. Dynamic HTML Rendering
+08. Comment
 
 1. 설치
 [ex08]$ npm i -D webpack webpack-cli webpack-dev-server style-loader css-loader node-sass sass-loader babel-loader @babel/core @babel/cli @babel/preset-env @babel/preset-react

@@ -1,7 +1,7 @@
 import React from 'react';
 
 function App() {
-    return (
+    return (        
         <div>
             <h2>app01</h2>
             <p>JSX Tutorial - 특징1: HTML과 차이점</p>
