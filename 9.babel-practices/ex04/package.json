@@ -1,5 +1,5 @@
 {
-  "name": "ex03",
+  "name": "ex04",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,9 +12,6 @@
   "devDependencies": {
     "@babel/cli": "^7.18.6",
     "@babel/core": "^7.18.6",
-    "@babel/plugin-transform-block-scoping": "^7.18.6",
-    "@babel/plugin-transform-for-of": "^7.18.8",
-    "@babel/plugin-transform-parameters": "^7.18.8",
-    "@babel/plugin-transform-template-literals": "^7.18.6"
+    "@babel/preset-env": "^7.18.6"
   }
 }
