@@ -1,6 +1,6 @@
     import React from 'react';
 
-    function Clock02(props) {
+    function Clock02() {
         const date = new Date();
         const hours = date.getHours();
         const minutes = date.getMinutes();
