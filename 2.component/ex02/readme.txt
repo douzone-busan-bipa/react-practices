@@ -2,8 +2,14 @@ ex02: Component Styling
 
 1) Inline Styling: src/01
 2) Normal CSS
-3) CSS Module
-4)
+    - css-loader options: {module: false}
+    - [ex02]$ npm run debug src=02 css-modules=false
+3) CSS Module I
+    - css-loader options: {module: true}
+    - [ex02]$ npm run debug src=03 (css-modules=true)
+4) CSS Module II
+    - css-loader options: {module: true}
+    - [ex02]$ npm run debug src=03 (css-modules=true)
 5)
 6)
 7)
