@@ -1,18 +1,12 @@
 import React from 'react'
-import styles from './assets/scss/SearchBar.scss';
-import PropTypes from 'prop-types';
+import styles from './assets/css/SearchBar.css';
 
-export default function SearchBar({callback}) {
+export default function SearchBar() {
   return (
     <div className={styles.Searchbar}>
         <input
           type='text'
-          placeholder='찾기'
-          onChange={e => callback(e.target.value)} />
+          placeholder='찾기' />
     </div>
   )
-}
-
-SearchBar.propTypes = {
-  callback: PropTypes.func.isRequired
 }
