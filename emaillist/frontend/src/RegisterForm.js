@@ -1,5 +1,5 @@
 import React, {useRef} from 'react'
-import styles from './assets/css/RegisterForm.css';
+import styles from './assets/scss/RegisterForm.scss';
 
 const RegisterForm = () => {
 
