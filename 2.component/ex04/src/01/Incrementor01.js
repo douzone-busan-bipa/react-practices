@@ -15,7 +15,7 @@ export default class extends Component {
                 <button onClick={(e) => {
                     this.setState({
                         val: this.state.val + this.state.step
-                    })
+                    });
                 }}>
                     <strong>+</strong>
                 </button>
