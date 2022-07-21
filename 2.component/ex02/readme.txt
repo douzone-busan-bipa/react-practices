@@ -15,6 +15,15 @@ ex02: Component Styling
     - [ex02]$ npm run debug src=05 (css-modules=true)
 6) CSS in JS(Style Component), Less & Styleable    
 7) Font Awesome
+    - 코어 설치
+        [ex02]$ npm i @fortawesome/fontawesome-svg-core
+        [ex02]$ npm i @fortawesome/react-fontawesome
+    - icon(light(유료), regular, solid(기본), brands(기업)) 선택 설치
+        [ex02]$ npm i @fortawesome/free-solid-svg-icons
+        [ex02]$ npm i @fortawesome/free-regular-svg-icons
+        [ex02]$ npm i @fortawesome/free-brands-svg-icons
+
+
 8) React Modal
 
 
