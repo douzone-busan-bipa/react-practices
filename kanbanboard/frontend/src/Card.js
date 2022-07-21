@@ -7,7 +7,7 @@ import styles from './assets/scss/Card.scss';
 export default function Card({no, title, description, status}) {
     return (
         <div className={styles.Card}>
-            <div style={styleSideColor}/>
+            
             <div
                 className={styles.Card__Title}>
                 {title}
