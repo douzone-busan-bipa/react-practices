@@ -11,19 +11,12 @@ export default function TaskList({cardNo, tasks, notifyAddTask, notifyChangeTask
                                         key={task.no}
                                         no={task.no}
                                         name={task.name} 
-                                        done={task.done}
-                                        notifyChangeTaskDone={notifyChangeTaskDone} />)}
+                                        done={task.done} />)}
             </ul>
             <input
                 type='text'
                 className={styles.TaskList__add_task}
-                placeholder='태스크 추가'
-                onKeyPress={(e) => {
-                    if (e.key === 'Enter') {
-                        notifyAddTask(e.target.value);
-                        e.target.value = '';
-                    }
-                }}/>
+                placeholder='태스크 추가'/>
         </div>
     );
 }
