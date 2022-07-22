@@ -12,7 +12,8 @@ export default function CardList({title, cards}) {
                 no={card.no}
                 title={card.title}
                 description={card.description}
-                status={card.status} />)}
+                status={card.status}
+                tasks={card.tasks} />)}
         </div>
     )
 }
