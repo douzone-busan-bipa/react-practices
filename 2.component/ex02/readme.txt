@@ -13,7 +13,7 @@ ex02: Component Styling
 5) SASS & SCSS
     - css-loader options: {module: true}
     - [ex02]$ npm run debug src=05 (css-modules=true)
-6) CSS in JS(Style Component), Less & Styleable    
+6) CSS in JS(Styled Component), Less & Styleable    
 7) Font Awesome
     - 코어 설치
         [ex02]$ npm i @fortawesome/fontawesome-svg-core
@@ -25,12 +25,14 @@ ex02: Component Styling
 
 
 8) React Modal
+    - 설치
+        [ex02]$ npm i react-modal
 
 
 ======================================================================================
 1. 설치
 [ex02]$ npm i -D webpack webpack-cli webpack-dev-server style-loader css-loader node-sass sass-loader babel-loader @babel/core @babel/cli @babel/preset-env @babel/preset-react
-[ex02]$ npm i react react-dom prop-types
+[ex02]$ npm i react react-dom prop-types react-modal
 
 2. 설정
 babel.config.json
