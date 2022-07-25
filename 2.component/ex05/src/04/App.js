@@ -8,8 +8,8 @@ export default function App() {
     return (
             <Clock
                 message={'ex05: useEffect Hook example'}
-                hours={state.hours}
-                minutes={state.minutes}
-                seconds={state.seconds}/>
+                hours={hours}
+                minutes={minutes}
+                seconds={seconds}/>
     );
 }

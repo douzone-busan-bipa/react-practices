@@ -3,6 +3,8 @@ import LifeCycle from './LifeCycle';
 
 export default function App() {
     const [color, setColor] = useState('#000');
+    const [show, setShow] = useState(true);
+
     return (
         <Fragment>
             <h2>ex05 - Component LifeCycle</h2>
@@ -11,7 +13,14 @@ export default function App() {
                 색상변경
             </button>
             <br/>
-            <LifeCycle color={color}/>
+            <br/>
+            <input type='checkbox' checked={show} onChange={e => setShow(!show)}/> 컴보넌트 보기
+            <br/>
+            {
+                show ? 
+                <LifeCycle color={color}/> :
+                null
+            }    
         </Fragment>
     );
 }

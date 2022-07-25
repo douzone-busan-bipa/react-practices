@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 
 export default class LifeCircle extends Component {
-    constructor() {
-        super(...arguments);
+    constructor(props) {
+        super(props);
         this.h3Ref = null;
         this.state = {
             color: null
@@ -66,12 +66,8 @@ export default class LifeCircle extends Component {
     }
 
     /**
-     * 컴포넌트 생성을 마치고 첫 렌더링 작업이 끝난 후!
-     * 다른 자바스크립트 라이브러리 또는 프레임워크 함수 호출 또는
-     * 1. 이벤트 등록
-     * 2. 타이머 설정
-     * 3. 네트워크 통신
-     * 등을 할 수 있다.
+
+    
      */
     componentDidMount() {
         console.log('[MOUNT04]: componentDidMount()');
