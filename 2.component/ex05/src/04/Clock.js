@@ -4,9 +4,6 @@ import SessionAmPm from "./SessionAmPm";
 import './assets/scss/Clock.scss';
 
 export default function Clock({message, hours, minutes, seconds}) {
-
-
-
     return (
         <div className={'clock-display'}>
             <h2>{message}</h2>

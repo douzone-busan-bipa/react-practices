@@ -66,8 +66,7 @@ export default class LifeCircle extends Component {
     }
 
     /**
-
-    
+        이벤트 등록, 타이머 시작, 통신(AJAX)
      */
     componentDidMount() {
         console.log('[MOUNT04]: componentDidMount()');
