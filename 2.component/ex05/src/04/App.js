@@ -3,6 +3,7 @@ import './assets/scss/App.scss'
 import Clock from './Clock';
 
 export default function App() {
+    console.log("!!!");
     const getCurrentClockTime = () => {
         const now = new Date();
         const hours = now.getHours();
