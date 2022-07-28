@@ -12,5 +12,7 @@
         }],
         "@babel/preset-react"
     ],
-    "plugins": []
+    "plugins": [
+        "@babel/plugin-syntax-throw-expressions",
+        "@babel/plugin-transform-runtime"]
 }
