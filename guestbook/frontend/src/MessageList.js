@@ -23,14 +23,14 @@ export default function MessageList({messages, callback}) {
             if (e.target.password.value === '') {
                 return;
             }
-
+            
             const response = await fetch(`/api/guestbook/${modalData.messageNo}`, {
                 method: 'delete',
                 headers: {
-                    'Content-Type': 'application/json',
+                    'Content-Type': 'application/x-www-form-urlencoded',
                     'Accept': 'application/json'
                 },
-                body: JSON.stringify({password: e.target.password.value})
+                body: `password=${e.target.password.value}`
             });
 
             if (!response.ok) {
