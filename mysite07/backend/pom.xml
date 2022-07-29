@@ -9,17 +9,17 @@
 		<version>2.6.4</version>
 		<relativePath />
 	</parent>
-	<groupId>me.kickscar</groupId>
-	<artifactId>emaillist07</artifactId>
+	<groupId>com.example</groupId>
+	<artifactId>mysite07</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>emaillist7</name>
-
+	<name>mysite07</name>
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>11</java.version>
 	</properties>
-
+	
 	<dependencies>
 		<!-- Core Starter -->
 		<dependency>
@@ -58,15 +58,15 @@
 			<artifactId>mariadb-java-client</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		
+
 		<!-- Lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
-		
-		<!-- Spring Boot Test Integration -->
+
+		<!-- Boot Test Integration -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -75,7 +75,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>emaillist07</finalName>
+		<finalName>mysite07</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -84,7 +84,7 @@
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
+							<artifactId>lombok</artifactId>					
 						</exclude>
 						<exclude>
 							<groupId>org.springframework.boot</groupId>
