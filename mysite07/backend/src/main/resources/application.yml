@@ -43,9 +43,12 @@ spring:
          enabled: true
    datasource:
       driver-class-name: org.mariadb.jdbc.Driver
-      url: jdbc:mysql://192.168.0.51:3307/webdb?characterEncoding=utf8
+      url: jdbc:mysql://192.168.10.55:3306/webdb?characterEncoding=utf8
       username: webdb
-      password: webdb   
+      password: webdb
+      hikari:
+        minimum-idle: 10
+        maximum-pool-size: 20  
 
 server:
    port: 8080
@@ -74,9 +77,12 @@ spring:
          static-locations: classpath:/assets/, file:/mysite-uploads/
    datasource:
       driver-class-name: org.mariadb.jdbc.Driver
-      url: jdbc:mysql://192.168.0.51:3307/webdb?characterEncoding=utf8
+      url: jdbc:mysql://192.168.10.55:3306/webdb?characterEncoding=utf8
       username: webdb
-      password: webdb   
+      password: webdb
+      hikari:
+        minimum-idle: 10
+        maximum-pool-size: 20  
          
 server:
    port: 8881
