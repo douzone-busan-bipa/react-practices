@@ -17,11 +17,11 @@ export default function Guestbook() {
         console.log("!!!!!!!!!!!--------> UPDATE!!!!!");
     });
 
-    const notifyMessage = {
-        delete: function (no) {
-            setMessages(messages.filter((message) => message.no != no));
-        },
-        add: async function (message) {
+    const deleteMessage = function (no) {
+        setMessages(messages.filter((message) => message.no != no));
+    }
+
+    const addMessage = async function (message) {
             const response = await fetch('/api/guestbook', {
                 method: 'post',
                 headers: {
@@ -41,7 +41,6 @@ export default function Guestbook() {
             }
 
             setMessages([json.data, ...messages]);
-        }
     }
 
     const fetchMessage = async function () {
@@ -95,8 +94,8 @@ export default function Guestbook() {
             <div ref={innerRef}>
                 <div className={styles.Guestbook}>
                     <h1>방명록</h1>
-                    <WriteForm notifyMessage={notifyMessage}/>
-                    <MessageList messages={messages} notifyMessage={notifyMessage}/>
+                    <WriteForm callback={addMessage}/>
+                    <MessageList messages={messages} callback={deleteMessage}/>
                 </div>
             </div>
         </div>
