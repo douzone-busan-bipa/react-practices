@@ -6,6 +6,7 @@ export default function WriteForm({callback}) {
 
     const handleSubmit = function (e) {
         e.preventDefault();
+        
         try {
             const newMessage = Array
                 .from(e.target, (input) => {
@@ -39,7 +40,7 @@ export default function WriteForm({callback}) {
                 type={'text'}
                 name={'name'}
                 placeholder={'이름'}
-                autoComplete={' off'}/>
+                autoComplete={'off'}/>
             <input
                 type={'password'}
                 name={'password'}

@@ -37,7 +37,7 @@ spring:
          on-profile: development
    web:
       resources:
-         static-locations: classpath:/assets/, file:E:/mysite-uploads/
+         static-locations: classpath:/assets/, file:/mysite-uploads/
    devtools:
       livereload:
          enabled: true
