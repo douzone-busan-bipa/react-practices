@@ -7,7 +7,10 @@ export default function Task({no, name, done, notifyChangeTaskDone}) {
         <li className={styles.Task}>
             <input 
                 type='checkbox' 
-                checked={done === 'Y'}/>
+                checked={done === 'Y'}
+                onChange={e => {
+                    notifyChangeTaskDone(no, e.target.checked ? 'Y' : 'N');
+                }}/>
             {name}
             <a href='#' className={styles.Task__remove}/>
         </li>
