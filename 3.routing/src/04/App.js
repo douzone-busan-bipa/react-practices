@@ -9,9 +9,9 @@ export default function App() {
     return (
         <Router>
             <Routes>
-                <Route path='/' element={<Main />} />
-                <Route path='gallery' element={<Gallery />} />
-                <Route path='guestbook' element={<Guestbook />} />
+                <Route path="/" element={<Main />} />
+                <Route path="/gallery" element={<Gallery />} />
+                <Route path="/guestbook" element={<Guestbook />} />
             </Routes>
         </Router>
     );

@@ -39,7 +39,8 @@ module.exports = function(env) {
             port: 9090,
             liveReload: true,
             hot: true,
-            compress: true
+            compress: true,
+            historyApiFallback: true
         }
     }
 }

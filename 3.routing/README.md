@@ -2,7 +2,7 @@
 
 ### src/01: React Router Basic I: Implemented in a Simple Way(hashchange event driven)
 ### src/02: React Router Basic II: HTML5 history API
-### src/03: React Router Basic III: HashRouter &amp; BrowserRouter
+### src/03: React Router Basic III: HashRouter &amp; BrowserRouter(x)
 ### src/04: React Router Basic V: Link VS NavLink
 ### src/05: Styling &amp; Semantic Markup
 ### src/06: Composition
