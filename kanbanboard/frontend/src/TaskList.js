@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Task from './Task';
 import styles from './assets/css/TaskList.css';
 
-export default function TaskList({cardNo, tasks, notifyAddTask, notifyChangeTaskDone}) {
+export default function TaskList({cardNo, tasks, callbackAddTask, callbackChangeTaskDone}) {
     return (
         <div className='TaskList'>
             <ul>
@@ -12,7 +12,7 @@ export default function TaskList({cardNo, tasks, notifyAddTask, notifyChangeTask
                                         no={task.no}
                                         name={task.name} 
                                         done={task.done}
-                                        notifyChangeTaskDone={notifyChangeTaskDone} />)}
+                                        callback={callbackChangeTaskDone} />)}
             </ul>
             <input
                 type='text'
@@ -20,7 +20,7 @@ export default function TaskList({cardNo, tasks, notifyAddTask, notifyChangeTask
                 placeholder='태스크 추가'
                 onKeyPress={(e) => {
                     if (e.key === 'Enter') {
-                        notifyAddTask(e.target.value);
+                        callbackAddTask(e.target.value);
                         e.target.value = '';
                     }
                 }}/>

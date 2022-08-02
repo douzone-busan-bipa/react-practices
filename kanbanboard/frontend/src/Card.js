@@ -19,7 +19,7 @@ export default function Card({no, title, description, status}) {
         backgroundColor: status === 'Doing' ? '#bd8D31' : (status === 'ToDo' ? '#3a7e28' : '#222')
     };
 
-    const notifyChangeTaskDone = async (no, done) => {
+    const changeTaskDone = async (no, done) => {
         try {
             const response = await fetch(`/api/task/${no}`, {
                 method: 'put',
@@ -54,9 +54,8 @@ export default function Card({no, title, description, status}) {
         }
     }
 
-    const notifyAddTask = async (taskName) => {
+    const addTask = async (taskName) => {
         try {
-            // console.log('notifyTaskAdd', cardNo, taskName);
             const newTask = {
                 no: null,
                 name: taskName,
@@ -135,8 +134,8 @@ export default function Card({no, title, description, status}) {
                         <TaskList
                             cardNo={no}
                             tasks={tasks}
-                            notifyAddTask={notifyAddTask}
-                            notifyChangeTaskDone={notifyChangeTaskDone}/>
+                            callbackAddTask={addTask}
+                            callbackChangeTaskDone={changeTaskDone}/>
                     </div> :
                     null
             }

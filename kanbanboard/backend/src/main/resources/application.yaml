@@ -15,7 +15,7 @@ spring:
    web:
       resources:
          # Locations of static resources
-         static-locations: classpath:/static/
+         static-locations: classpath:/assets/
 
    thymeleaf:
       prefix : classpath:templates/
