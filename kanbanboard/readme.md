@@ -13,6 +13,16 @@ $ mvn -f kanbanboard/backend exec:exec clean package
     $ java -Dspring.profiles.active=production -jar kanbanboard/backend/target/kanbanboard07.jar
     ```
 
+#### ssh 연결(ssh key 사용하기)
+1.  key 생성하기
+```
+$ ssh-keygen -t rsa -b 2048 -m PEM -c "kicskcar@gmail.com"
+```
+
+2. 생성확인
+   - id_rsa: private key
+   - id_rsa.pub: public key 
+
 
 ## frontend
 #### 설치
