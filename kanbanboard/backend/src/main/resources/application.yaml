@@ -3,6 +3,8 @@ spring:
    profiles:
       active: development
 
+
+
 ---
 # common spring boot configuration
 spring:
@@ -31,6 +33,15 @@ spring:
       username: sa
       password:
 
+# mybatis
+mybatis:
+   config-location: classpath:mybatis/configuration.xml
+
+# logging
+logging:
+   level:
+      root: INFO 
+         
 
 ---
 # development profile: spring boot configuration
@@ -44,14 +55,6 @@ spring:
       livereload:
          enabled: true
 
-
----
-# mybatis
-mybatis:
-   config-location: classpath:mybatis/configuration.xml
-
-   
----
 # server
 server:
    port: 8080
@@ -62,7 +65,18 @@ server:
          enabled: true
          
 ---
-# logging
-logging:
-   level:
-      root: INFO           
+
+# production profile: spring boot configuration
+spring:
+   config:
+      activate:
+         on-profile: production
+
+# server
+server:
+   port: 8088
+   servlet:
+      context-path: /
+      encoding:
+         charset: UTF-8
+         enabled: true
