@@ -4,7 +4,7 @@ import styles from './assets/css/KabanBoard.css';
 
 export default function KanbanBoard() {
     const [cards, setCards] = useState([]);
-    useEffect(async () => {
+    const fetchCrads = async () => {
         try {
             const response = await fetch('/api/card', {
                 method: 'get',
@@ -26,6 +26,10 @@ export default function KanbanBoard() {
         } catch (err) {
             console.log(err.message);
         }
+    };
+
+    useEffect(() => {
+        fetchCrads();
     }, []);
 
     return (
