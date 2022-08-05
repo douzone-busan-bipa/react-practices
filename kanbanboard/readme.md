@@ -16,14 +16,30 @@ $ mvn -f kanbanboard/backend exec:exec clean package
 #### ssh 연결(ssh key 사용하기)
 1.  key 생성하기
 ```
-$ ssh-keygen -t rsa -b 2048 -m PEM -c "kicskcar@gmail.com"
+# ssh-keygen -t rsa -b 2048 -m PEM -C "kicskcar@gmail.com"
 ```
 
 2. 생성확인
    - id_rsa: private key
    - id_rsa.pub: public key 
 
+3. 공개키(id_rsa.pub) 서버 설치
+    ```
+    # mv ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
+    ```
 
+4. ssh(client) 연결 테스트
+    ```
+    $ ssh -i mykey.pem root@서버
+    ```
+5. ssh 연결 환경 설정 
+6. jenkins ssh server 설정
+  1) Publish over SSH 플러그인 설치
+  2) Publish over SSH 플러그인으로 ssh server 등록하기
+  3) project 빌드 후 조치(post-build action: send build artifacts over SSH) 설정
+      - proj-apps.jar: transfer
+      - launch.sh: transfer + execution    
+     
 ## frontend
 #### 설치
 ```sh
