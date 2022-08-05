@@ -36,12 +36,17 @@ $ mvn -f kanbanboard/backend exec:exec clean package
    ```
    # vi ~/.ssh/environment
    ```
+  내용
    PATH=/usr/local/douzone/git/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/local/douzone/java/bin:/usr/local/douzone/maven/bin:/usr/local/douzone/mariadb/bin:/usr/local/douzone/python/bin:/usr/local/douzone/node/bin:/root/bin
+
 
    ```
    # vi /etc/ssh/sshd_config
    ```
+   수정
    PermitUserEnvironment yes
+
+   
    ```
    # systemctl restart sshd
    ```
