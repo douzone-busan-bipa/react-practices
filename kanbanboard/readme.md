@@ -32,7 +32,22 @@ $ mvn -f kanbanboard/backend exec:exec clean package
     ```
     $ ssh -i mykey.pem root@서버
     ```
-5. ssh 연결 환경 설정 
+5. ssh 연결 환경 설정(~/.ssh/environment)
+   ```
+   # vi ~/.ssh/environment
+   ```
+   PATH=/usr/local/douzone/git/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/local/douzone/java/bin:/usr/local/douzone/maven/bin:/usr/local/douzone/mariadb/bin:/usr/local/douzone/python/bin:/usr/local/douzone/node/bin:/root/bin
+
+   ```
+   # vi /etc/ssh/sshd_config
+   ```
+   PermitUserEnvironment yes
+   ```
+   # systemctl restart sshd
+   ```
+
+
+    
 6. jenkins ssh server 설정
   1) Publish over SSH 플러그인 설치
   2) Publish over SSH 플러그인으로 ssh server 등록하기
