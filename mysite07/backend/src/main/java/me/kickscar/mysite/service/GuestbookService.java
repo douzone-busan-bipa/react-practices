@@ -24,14 +24,15 @@ public class GuestbookService {
 		vo.setNo(no);
 		vo.setPassword(password);
 		
-		return guestbookRepository.delete(vo);
+		guestbookRepository.delete(vo);
 		
-//		vo.setNo(null);
-//		vo.setName("안대혁");
-//		vo.setMessage("테스트");
-//		vo.setPassword("1234");
-//		guestbookRepository.insert(vo);
-//		return true;
+		vo.setNo(null);
+		vo.setName("안대혁");
+		vo.setMessage("테스트");
+		vo.setPassword("1234");
+		guestbookRepository.insert(vo);
+
+		return true;
 	}
 
 	public boolean addMessage(GuestbookVo vo) {
